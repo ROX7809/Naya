@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation b=Bar</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        }
+    .logo{
+        height: 33px;
+        width: 74px;
+        cursor: pointer;
+    }
+    li,a,button{
+        font-family: "Montserrat", sans-serif;
+        font-weight:bold;
+        font-size: 18px;
+        color: rgb(136, 113, 147);
+        text-decoration: none;
+        list-style: none;
+    }
+    header{
+        flex-direction: row;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 30px 50px;
+        margin: 30px 50px;
+    }
+    .nav-link{
+    list-style: none;
+    }
+    .nav-link li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    .nav-link li a{
+        transition: all 0.3s ease 0s;
+    }
+    .nav-link li a:hover{
+        color: #589c96;
+    }
+    button{
+        padding: 9px 25px;
+        background-color: rgb(148, 213, 229);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    button:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+    </style>
+</head>
+<body>
+    <Header>
+        <img class="logo" src="RS.png" alt="Logo">
+        <nav>
+            <ul class="nav-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Servies</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <a href=""><button>Contact</button></a>
+       
+    </Header>
+</body>
+</html>
