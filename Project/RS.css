@@ -39,6 +39,7 @@ h1{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: italic;
+    
 }
 .RideSathi{
     position: absolute;
@@ -76,6 +77,18 @@ li a{
     position: absolute;
     right: 71px;
     top: 356px;
+}
+.RideSathi.anim{
+    animation-delay: 0s;
+}
+.srsc.anim{
+animation-delay: 0.2s;
+}
+.btn.anim{
+    animation-delay: 0.3s;
+}
+.photo.anim{
+    animation-delay: 0.4s;
 }
 .nav-link li a{
     transition: all 0.3s ease 0s;
@@ -209,4 +222,15 @@ transparent;
   }
 .btn{
     margin: 30px 0px;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
