@@ -93,11 +93,12 @@ animation-delay: 0.2s;
 .nav-link li a{
     transition: all 0.3s ease 0s;
 }
-.nav-link li a:hover{
-    background: #5da29d;
+.nav-link li a:hover {
+    background: #6AB0D8;
     border: none;
     border-radius: 50px;
     color: white;
+    padding: 10px 15px;
 }
 .srsc p{
     font-family: "Orelega One", serif;
