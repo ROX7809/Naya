@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- nav-bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="nav-links">
+               <a href="..\index\balck.html">Home</a>
+               <a href="#chat">Chat</a>
+               <a href="">Community</a>
+               <a href="#help">Help</a>
+               <a href="..\About-us\aboutus.html">About Us</a>
+        </div>
+        <div></div>
+        <div class="menu-toggle">☰</div>
+    </div>
+    <!-- Center content -->
+     <div class="center">
+        <div class="heading">
+            Welcome to the Ride-Sharing <br> Community!
+        </div>
+        <div class="center-bottom">
+            <img src="bike.png" alt="">
+            <p>“ We provide a ride-sharing service for Kathmandu University members to easily travel together. Our platform helps students, faculty, and staff share rides, saving time and costs while promoting eco-friendly travel. Join us to connect with fellow KU members and make your journeys more convenient.”</p>
+        </div>
+     </div>
+     <!-- Blog -->
+      <div class="Blog">
+        Blog :
+      </div>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

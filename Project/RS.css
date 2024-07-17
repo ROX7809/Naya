@@ -9,11 +9,11 @@
     font-size: 30px;
 }
 body{
-    height: 1000vh;
+    height: 135vh;
 }
 .logo{
-    height: 58px;
-    width: 111px;
+    height: 3.625rem    ;
+    width: 6.938rem;
     cursor: pointer;
 }
 header{
@@ -25,7 +25,7 @@ li,a,button{
     list-style: none;
     text-decoration: none;
     display: inline-block;
-    padding: 5px 6px;
+    padding: 5px 5px;
 }
 h1{
     color: #007DFE;
@@ -39,7 +39,6 @@ h1{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: italic;
-    
 }
 .RideSathi{
     position: absolute;
@@ -47,10 +46,14 @@ h1{
     top: 203px;
     cursor: default;
 }
+nav{
+    margin: 0px 30px;
+}
 ol{
     display: flex;
     width: 700px;
     justify-content: space-around;
+    padding: 0px 15px;
 }
 li a{
     color: #6AB0D8;
@@ -71,13 +74,24 @@ li a{
     background-color: rgba(73, 109, 137, 0.8);
     transition: all 1.5s ease 0s;
 }
-.photo{
+.container {
+    display: flex;
+    flex-direction: row;/* Align items to the end of the flex container (right side) */
+    /* position: relative; Establish positioning context for absolute positioning */
+    height: 100vh; /* Example height for demonstration */
+    /* Additional styles for container if needed */
+    z-index: 100;
+}
+
+.photo {
     height: 640px;
     width: 1010px;
-    position: absolute;
-    right: 71px;
-    top: 356px;
+    /* position: absolute; 
+    top: 356px; 
+    right: 71px;  */
+    margin-left: auto; /* Push image to the right edge of the container */
 }
+
 .RideSathi.anim{
     animation-delay: 0s;
 }
@@ -92,9 +106,10 @@ animation-delay: 0.2s;
 }
 .nav-link li a{
     transition: all 0.3s ease 0s;
+    
 }
-.nav-link li a:hover {
-    background: #6AB0D8;
+.nav-link li a:hover{
+    background:#6AB0D8;
     border: none;
     border-radius: 50px;
     color: white;
@@ -234,4 +249,10 @@ transparent;
         opacity: 1;
         transform: translateY(0px);
     }
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #E8E8E8;
 }
