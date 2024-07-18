@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="send-msg.css">
+    <title>RideSathi/Help/Message</title>
+</head>
+<body>
+    <!-- nav-bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="nav-links">
+               <a href="..\index\Ridesathi.html">Home</a>
+               <a href="#chat">Chat</a>
+               <a href="..\Community\Community.html">Community</a>
+               <div class="dropdown">
+                <a href="#" >Help <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fa-regular fa-message"></i> Send Message</a>
+                    <hr>
+                     <a href=""> <i class="fa-solid fa-phone"></i> Helpline: 011-678365</a>
+                </div>
+            </div>
+               <a href="..\About-us\aboutus.html">About Us</a>
+        </div>
+        <div></div>
+        <div class="menu-toggle">☰</div>
+    </div>
+    <!-- bg-img -->
+    <div class="bg-content">
+        <img src="help.svg" alt="">
+        <div class="text">
+            <p>RideSathi Help Center</p>
+            <span>We're here to help. Your questions, our answers.</span>
+        </div>
+     </div>
+     <div class="form-container">
+        <form id="contactForm" method="POST" action="/submit-form">
+            <span>Send your message</span>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <div>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name" pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces.">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <div>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="number">Mobile Number</label>
+                <div>
+                    <input type="tel" id="number" name="number" required placeholder="Enter your number" pattern="[0-9]{10}" title="Mobile number should be 10 digits.">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <div>
+                    <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
+                </div>
+            </div>
+            We want your input: questions, bug reports, complaints, praise, feature requests. Every little bit helps. Let us know what we can do to improve RideSathi.
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+     <!-- footer -->
+<footer>
+    <div class="row">
+        <div class="col1 col">
+            <img src="logo.png" alt="">
+           <div> 
+            <div class="Quote">
+                <p>Connect, Share and <p>
+                <p>Grow together</p>
+            </div>
+        </div>
+        </div>
+        <div class="col2 col">
+            <div class="top">
+                <p>RideSathi</p>
+                    <a href="..\index\Ridesathi.html">Home</a>
+                    <a href="">Chat</a>
+                    <a href="..\Community\Community.html">Community</a>
+                    <a href="">Help</a>
+                    <a href="../About-us/aboutus.html">About Us</a>
+            </div>
+        </div>
+        <div class="col3 col">
+            <div class="follow">
+                <p>Follow us on:<p>
+                <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p>2024 RideSathi.copyright</p>
+        </div>
+</footer>
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('show');
+    });
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ridesathi/Community</title>
     <link rel="stylesheet" href="Community.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -14,10 +14,17 @@
             <img src="logo.png" alt="">
         </div>
         <div class="nav-links">
-               <a href="..\index\balck.html">Home</a>
+               <a href="..\index\Ridesathi.html">Home</a>
                <a href="#chat">Chat</a>
                <a href="">Community</a>
-               <a href="#help">Help</a>
+               <div class="dropdown">
+                <a href="#" >Help <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="..\message\send-msg.html"><i class="fa-regular fa-message"></i> Send Message</a>
+                    <hr>
+                     <a href=""> <i class="fa-solid fa-phone"></i> Helpline: 011-678365</a>
+                </div>
+            </div>
                <a href="..\About-us\aboutus.html">About Us</a>
         </div>
         <div></div>
@@ -36,7 +43,67 @@
      <!-- Blog -->
       <div class="Blog">
         Blog :
-      </div>
+
+      <!-- Center images -->
+       <div class="blog-img">
+        <div class="first-img">
+            <img src="dhulikhel.jpg" alt="">
+            <span class="blog-heading">The Daily Commute from Kathmandu to Dhulikhel :</span>
+            <p class="date">WRITTEN ON 30 DECEMBER, 2003</p>
+            <p>
+                The daily commute from Kathmandu to Dhulikhel can be quite a challenge. The distance, the traffic, and the time it takes can make it a daunting task, especially on days when classes start early in the morning. The journey often involves navigating through congested roads and dealing with unpredictable traffic conditions, which can add significant stress to an already busy academic schedule. However, with the introduction of our ride-sharing service, students now have a convenient and cost-effective solution to this problem. By sharing rides with fellow students, teacher and faculty, not only can you save money and time, but you can also enjoy a more relaxed and enjoyable commute. </p>
+        </div>
+        <div class="second-img">
+            <img src="Kathmandu-University-KU.jpg" alt="">
+            <span class="blog-heading" id="margin">How Ride Sathi is Revolutionizing the Commute for Kathmandu University Students :</span>
+            <p class="date">WRITTEN ON 30 DECEMBER, 2003</p>
+            <p class="blog-text">
+                As a student at Kathmandu University, commuting from Kathmandu to Dhulikhel can be a daily struggle. But thanks to Ride Sathi, a dedicated ride-sharing platform, this once arduous journey has become much more manageable and enjoyable. Ride Sathi saves you money by sharing rides with fellow students, reduces commute time, and helps the environment by decreasing the number of cars on the road. Plus, it fosters a sense of community by connecting you with other students. Join Ride Sathi to make your daily travel easier, cheaper, and more social.</p>
+        </div>
+    </div>
+    <div class="upload">
+            <a href=""><button>Upload</button></a>
+    </div>
+          </div>
+          <!-- footer -->
+          <footer>
+            <div class="row">
+                <div class="col1 col">
+                    <img src="logo.png" alt="">
+                   <div> 
+                    <div class="Quote">
+                        <p>Connect, Share and <p>
+                        <p>Grow together</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col2 col">
+                    <div class="top">
+                        <p>RideSathi</p>
+                            <a href="..\index\Ridesathi.html">Home</a>
+                            <a href="">Chat</a>
+                            <a href="">Community</a>
+                            <a href="..\message\send-msg.html">Help</a>
+                            <a href="..\About-us\aboutus.html">About Us</a>
+                    </div>
+                </div>
+                <div class="col3 col">
+                    <div class="follow">
+                        <p>Follow us on:<p>
+                        <div class="icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+                <div class="copyright">
+                    <i class="fa-regular fa-copyright"></i>
+                    <p>2024 RideSathi.copyright</p>
+                </div>
+        </footer>
     <script>
         document.querySelector('.menu-toggle').addEventListener('click', () => {
             document.querySelector('.nav-links').classList.toggle('show');

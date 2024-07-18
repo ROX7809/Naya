@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Balthazar", serif;
     font-size: 20px;
+    cursor: default;
 }
  /* navigation bar */
  .navbar {
@@ -22,20 +23,20 @@ a,button{
     list-style: none;
     text-decoration: none;
     display: inline-block;
-
+    cursor: pointer;
 }
 .navbar .nav-links {
     display: flex;
     gap: 15px;
 }
 .navbar .nav-links a {
-    color: #007DFE;
+    color: #6AB0D8;
     text-decoration: none;
     padding: 8px 16px;
     font-size: 25px;
 }
 .navbar .nav-links a:hover {
-    background:#007DFE;
+    background:#6AB0D8;
     border: none;
     border-radius: 50px;
     color: white;
@@ -51,17 +52,39 @@ a,button{
     border: none;
     padding: 10px 20px;
 }
-.glow-on-hover {
-    border: none;
-    outline: none;
-    color: 
-#fff;
-    background: white;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 50px;
-}
+/* help drop-down */
+        .dropdown hr{
+            opacity: 50%;
+        }
+        .dropdown .dropdown-content a:hover{
+            border-radius: 0px ;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content p {
+            color: #666;
+            padding: 8px 16px;
+            margin: 0;
+            font-size: 14px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 /* Responsive nav-bar */
 .menu-toggle {
     display: none;
@@ -278,6 +301,7 @@ footer{
     font-size: 30px;
     color: #04B4FC;
     margin: 10px  15px 0px  15px;
+    cursor: pointer;
 }
  /* media query for footer */
 @media (max-width: 768px) {
@@ -310,4 +334,44 @@ hr{
 }
 .copyright p{
     margin-left: 20px;
+}
+/* center 3rd content */
+.content-3 {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    margin-bottom: -50px;
+}
+ .content-3 img{
+    height: 395px;
+    width: 680px;
+ }
+.content-3 .info {
+    max-width: 50%;
+}
+.content-3 h2 {
+    font-size: 2rem;
+    margin: 0px 20px 20px 20px;
+}
+.content-3 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0px 20px 0px 20px;
+    opacity: 70%;
+}
+.content-3 img {
+    height: auto;
+    max-width: 50%;
+}
+@media (max-width: 768px) {
+    .content-3 {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .content-3 .info, .content-3 img {
+        max-width: 100%;
+    }
+    .content-3 img {
+     margin-bottom: 40px;
+    }
 }

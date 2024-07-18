@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Nav Bar</title>
-    <link rel="stylesheet" href="black.css">
+    <title>Ridesathi</title>
+    <link rel="stylesheet" href="Ridesathi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="login.js" defer></script>
 </head>
@@ -18,11 +18,19 @@
                <a href="#">Home</a>
                <a href="#">Chat</a>
                <a href="..\Community\Community.html">Community</a>
-               <a href="#">Help</a>
+               <div class="dropdown">
+                <a href="" >Help <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="..\message\send-msg.html"><i class="fa-regular fa-message"></i> Send Message</a>
+                    <hr>
+                     <a href=""> <i class="fa-solid fa-phone"></i> Helpline: 011-678365</a>
+                </div>
+            </div>
                <a href="../About-us/aboutus.html">About Us</a>
         </div>
         <div class="auth-buttons">
             <button class="glow-on-hover login-btn">Log In</button>
+            <button class="glow-on-hover signup-btn">Sign Up</button>
         </div>
         <div class="menu-toggle">☰</div>
     </div>
@@ -43,7 +51,7 @@
                 <h2>LOGIN</h2>
                 <form action="#">
                     <div class="input-field">
-                        <input type="text" required name="" id="">
+                        <input type="email" required name="" id="">
                         <label for="">Email</label>
                     </div>
                         <div class="input-field">
@@ -70,7 +78,7 @@
                 <h2>SIGNUP</h2>
                 <form action="#">
                     <div class="input-field">
-                        <input type="text" required name="" id="">
+                        <input type="email" required name="" id="">
                         <label for="">Enter Your Email</label>
                     </div>
                         <div class="input-field">
