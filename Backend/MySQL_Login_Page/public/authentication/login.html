@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- login -->
+<div class="blur-bg-overlay">
+</div>
+<div class="Form-popup">
+   <span class="close-btn">
+       <i class="fa-solid fa-xmark"></i>
+   </span>
+   <div class="form-box login">
+       <div class="form-details">
+           <h2>Welcome Back</h2>
+           <p>Please log in using your personal information to stay connected with us.</p>
+       </div>
+       <div class="form-content">
+           <div><h2>LOGIN</h2></div>
+           <div>
+               <form action="auth/login" id="POST">
+                   <div class="input-field">
+                       <input type="email" required name="email" id="email">
+                       <label for="">Email</label>
+                   </div>
+                       <div class="input-field">
+                           <input type="password" required name="password" id="password">
+                           <label for="">Password</label>
+                       </div>
+                   <a href="forgot.html" class="forgot-pass">Forgot password?</a>
+                   <button type="submit">Log In</button>
+               </form>
+           </div>
+           <div class="bottom-link">
+               Don't have an account?
+               <a href="Register.html" id="signup-link">Signup</a>
+           </div>
+       </div>
+   </div>
+</body>
+</html>

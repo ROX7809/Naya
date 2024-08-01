@@ -16,7 +16,6 @@
         </div>
         <div class="nav-links">
                <a href="#">Home</a>
-               <a href="#">Chat</a>
                <a href="..\Community\Community.html">Community</a>
                <div class="dropdown">
                 <a href="" >Help <i class="fa-solid fa-caret-down"></i></a>
@@ -49,7 +48,8 @@
             </div>
             <div class="form-content">
                 <h2>LOGIN</h2>
-                <form action="#">
+                <form action="auth/login" id="POST
+                ">
                     <div class="input-field">
                         <input type="email" required name="" id="">
                         <label for="">Email</label>
@@ -76,7 +76,15 @@
             </div>
             <div class="form-content">
                 <h2>SIGNUP</h2>
-                <form action="#">
+                <form action="auth/register" id="POST">
+                    <div class="input-field">
+                        <input type="text" required name="" id="">
+                        <label for="">Enter Your Full Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required name="" id="">
+                        <label for="">Username</label>
+                    </div>
                     <div class="input-field">
                         <input type="email" required name="" id="">
                         <label for="">Enter Your Email</label>
@@ -111,8 +119,8 @@
                 <p>Share the Ride</p>
                 <p>Share the Cost</p>
             </div>
-            <a href=""><button>Find a Ride</button></a>
-            <a href=""><button>Offer a Ride</button></a>
+            <a href="..\Button\Find.html"><button>Find a Ride</button></a>
+            <a href="../Button/offer.html"><button>Offer a Ride</button></a>
         </div>
         <div class="image">
             <img src="ride.jpg" alt="Ride">
@@ -134,9 +142,8 @@
             <div class="top">
                 <p>RideSathi</p>
                     <a href="">Home</a>
-                    <a href="">Chat</a>
-                    <a href="">Community</a>
-                    <a href="">Help</a>
+                    <a href="..\Community\Community.html">Community</a>
+                    <a href="..\message\send-msg.html">Help</a>
                     <a href="../About-us/aboutus.html">About Us</a>
             </div>
         </div>

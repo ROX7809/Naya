@@ -1,0 +1,388 @@
+ /* for all element */
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Balthazar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orelega+One&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Balthazar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orelega+One&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Balthazar&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orelega+One&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');       
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Balthazar", serif;
+    font-size: 20px;
+    cursor: default;
+}
+ /* navigation bar */
+ .navbar {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 20px 15px;
+}
+.navbar .logo img{
+    height: 58px;
+    width: 111px;
+    cursor: pointer;
+}
+a,button{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+.navbar .nav-links a {
+    color: #6AB0D8;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 25px;
+}
+.navbar .nav-links a:hover {
+    background:#6AB0D8;
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
+.navbar .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+.navbar .auth-buttons button {
+    background-color: #81C7EE;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+}
+/* help drop-down */
+        .dropdown hr{
+            opacity: 50%;
+        }
+        .dropdown .dropdown-content a:hover{
+            border-radius: 0px ;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content p {
+            color: #666;
+            padding: 8px 16px;
+            margin: 0;
+            font-size: 14px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+/* Responsive nav-bar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        padding: 20px;
+        z-index: 3;
+    }
+    .navbar .nav-links.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+/* offer a ride */
+.oar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8E8E8;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    margin-top: 45px;
+    width: 90%;
+}
+.oar-text p {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 600px) {
+    .oar {
+        padding: 10px;
+    }
+}
+/* Form-info */
+.main {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+.form-info {
+    width: 40%;
+    background-color: #E8E8E8;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.form-info p {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-info form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 13px;
+}
+.form-info button{
+    align-self: center;
+}
+.form-info label {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.form-info button {
+    background-color: #6AB0D8;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-info button:hover {
+    background-color: #5a9bd5; 
+}
+.form-info input {
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+/* map */
+.map {
+    width: 40%;
+    background-color:#E8E8E8;
+    padding: 20px 20px 0 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+/* google-map  */
+.map .text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.map .google-map {
+    width: 100%;
+    height: 343px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.map p{
+    font-size: 2em;
+}
+.map .google-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+@media (max-width: 750px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 90%;
+        margin: 18px;
+    }
+    .form-info, .map {
+        width: 90%;
+    }
+}
+/* location */
+.location {
+    background-color: #E8E8E8;
+    margin: 13px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.location p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loc-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.loc-form .first label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.loc-form .first input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.location button {
+    background-color: #6AB0D8; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.location button:hover {
+    background-color: #5a9bd5;
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 750px) {
+    .loc-form .first {
+        width: 100%;
+    }
+
+    .location button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+ /* Footer */
+ footer {
+    background-color: #E8E8E8;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+}
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+/* column-1 */
+footer{
+    margin-top: 60px;
+}
+.col {
+    flex: 1;
+    padding: 20px;
+}
+.col1 img {
+    width: 100px;
+    height: auto;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Quote p{
+    font-size: 1rem;
+}
+/* Column-2 and column-3 */
+.top p, .follow p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.top a {
+    display: block;
+    color: black;
+    opacity: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+.icons a {
+    margin: 0 5px;
+    font-size: 30px;
+    color: #04B4FC;
+    margin: 10px  15px 0px  15px;
+}
+ /* media query for footer */
+@media (max-width: 768px) {
+    footer .row {
+        flex-direction: column;
+    }
+    footer .col1 {
+        order: 1;
+    }
+    footer .col2 {
+        order: 2;
+    }
+    footer .col3 {
+        order: 3;
+    }
+    footer{
+        margin-top: 10px;
+    }
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #979696;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 80%;
+}
+.copyright p{
+    margin-left: 20px;
+}
